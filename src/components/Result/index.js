@@ -5,11 +5,11 @@ export default function Result ({ result }) {
     return (
         <section>
         <div id="sunrise">
-            <p>{result.sunrise}</p>
+            <p>{result.public_repos}</p>
         </div>
 
         <div id="sunset">
-            <p>{result.sunset}</p>
+            <p>{result.login}</p>
         </div>
         </section>
     )
