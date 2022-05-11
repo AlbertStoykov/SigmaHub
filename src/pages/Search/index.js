@@ -19,6 +19,19 @@ function Search() {
 
   return (
     <div id="search">
+      Which gitHub Repository do you want to search?
+      <SearchForm getResult={search} />
+      <h1>{location}</h1>
+      {error ? (
+        <p role="alert">Oops there's been an error! {error}</p>
+      ) : (
+        renderResult()
+      )}
+    </div>
+  );
+
+  return (
+    <div id="search">
       Where do you want to search?
       <SearchForm getResult={search} />
       <h1>{location}</h1>
