@@ -19,7 +19,7 @@ function Search(){
 
     return (
         <div id="search">
-            Where do you want to search?
+            Which gitHub Repository do you want to search?
             <SearchForm getResult={search}/>
 
             <h1>{location}</h1>

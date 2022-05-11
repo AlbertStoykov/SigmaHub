@@ -11,9 +11,8 @@ export const getResult = searchTerm => {
     return async (dispatch) => {
         dispatch(loading(searchTerm));
         try {
-            const longLat = await fetchLongLat(searchTerm);
-            const riseSet = await fetchSunriseSunset(longLat);
-            dispatch(loadResult(riseSet))
+            const gitSearch = await userSearch(searchTerm);
+            dispatch(loadResult(gitSearch))
         } catch (err) {
             console.warn(err.message);
             dispatch({ type: 'SET_ERROR', payload: err.message })
@@ -38,6 +37,16 @@ const fetchSunriseSunset = async ([ latt, longt ]) => {
         const { data } = await axios.get(`https://api.sunrise-sunset.org/json?lat=${latt}&lng=${longt}&date=today`);
         return data;
     } catch(err) {
+        throw new Error(err.message)
+    }
+}
+
+const userSearch = async searchTerm => {
+    try {
+        const { data } = await axios.get(`https://api.github.com/users/${searchTerm}`);
+        return data
+    } catch(err) {
+        if (data.status === 404) { throw Error('That\'s not a valid user - Please try again!') }
         throw new Error(err.message)
     }
 }
