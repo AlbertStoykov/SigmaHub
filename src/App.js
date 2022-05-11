@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, UserCard } from "./components";
+import { NavBar, UserCard, RepoCard } from "./components";
 import {
   Welcome,
   Search,
@@ -25,6 +25,7 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/issues" element={<Issues />} />
           <Route path="/card" element={<UserCard />} />
+          <Route path="/repo" element={<RepoCard />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/pull-requests" element={<PullRequests />} />
           <Route path="*" element={<NotFound />} />
