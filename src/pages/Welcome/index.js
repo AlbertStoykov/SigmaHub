@@ -2,7 +2,10 @@ import React from "react";
 
 const Welcome = () => (
   <>
-    <h1>Sunrise, Sunset</h1>
+    <h1>
+      Welcome to SigmaHub, where you can spy on people without the need to visit
+      GitHub!
+    </h1>
   </>
 );
 
