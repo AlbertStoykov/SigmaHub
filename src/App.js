@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components";
-import {
-  Welcome,
+import { Welcome,
   Search,
   NotFound,
   Result,
   Explore,
   Marketplace,
   PullRequests,
-  Issues,
+  Issues
 } from "./pages";
+
 function App() {
   return (
     <div id="app">
@@ -32,3 +32,5 @@ function App() {
     </div>
   );
 }
+
+export default App;

@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { SearchForm, Result } from "../../components";
+import { SearchForm, Result, UserCard } from "../../components";
 import { getResult } from "../../actions";
 import "./style.css";
 
 function Search() {
   const result = useSelector((state) => state.result);
-  const location = useSelector((state) => state.location);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
-
+  const user = useSelector((state) => state.user);
+  
   const dispatch = useDispatch();
-   
+//   on load the page gets Eluented
+  useEffect(() => {
+    dispatch(getResult('Eluented'));
+  }, [])
+
   const search = searchTerm => dispatch(getResult(searchTerm));
-  console.log(search)
-
+  
   const renderResult = () =>
-    loading ? <p>Loading . . .</p> : <Result result={result} />;
-
+    loading ? <p>Loading . . .</p> : <UserCard result={result} />;
+    
   return (
     <div id="search">
-      Which gitHub Repository do you want to search?
+      Which gitHub User do you want to search?
       <SearchForm getResult={search} />
-      <h1>{location}</h1>
       {error ? (
         <p role="alert">Oops there's been an error! {error}</p>
       ) : (

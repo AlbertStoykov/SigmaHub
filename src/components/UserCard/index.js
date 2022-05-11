@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
 
-function UserCard({}) {
+function UserCard({ result }) {
   return (
     <div id="userCard">
-      <img src="\images\sigmaUser.png" />
-      <h2>Name, Region</h2>
-      <p>Number of Repos: 12</p>
+      <img src={`${result.avatar_url}`} />
+      <h2>{result.login}&nbsp;&nbsp;&nbsp;{result.name}&nbsp;&nbsp;&nbsp;{result.location}</h2>
+      <p>Number of Repos: {result.public_repos}</p>
       <button>Show Repos</button>
-      <p>Followers: 10</p>
-      <p>Followings: 22</p>
+      <p>Followers: {result.followers}</p>
+      <p>Following: {result.following}</p>
     </div>
   );
 }

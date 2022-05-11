@@ -6,6 +6,7 @@ export default function Result ({ result }) {
         <section>
         <div id="sunrise">
             <p>{result.public_repos}</p>
+            <p>{result.repos_url}</p>
         </div>
 
         <div id="sunset">
