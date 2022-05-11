@@ -11,9 +11,25 @@ function RepoPage() {
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
 
+  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    dispatch(getRepos(username));
+  }, [])
 
+  const renderResult = () =>
+  loading ? <p>Loading . . .</p> : <RepoCard result={result} />;
 
-  return 
+  return (
+    <div id="search">
+      {result.name}'s Repositories! 
+      {error ? (
+        <p role="alert">Oops there's been an error! {error}</p>
+      ) : (
+        renderResult()
+      )}
+    </div>
+  );
 }
 
 export default RepoPard;
