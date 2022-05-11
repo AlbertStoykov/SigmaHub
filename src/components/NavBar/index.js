@@ -7,35 +7,24 @@ const NavBar = () => {
   return (
     <nav>
       <NavLink className="home-link" to="/">
-      <img src="\images\logo.png" id="logo" />
+        <img src="\images\logo.png" id="logo" />
       </NavLink>
-      <NavLink className="home-link" to="/">
-
+      <NavLink className="search" to="/search">
+        Search
+      </NavLink>
+      <NavLink className="pull" to="/pull-requests">
         Pull Requests
       </NavLink>
-      <NavLink
-        id="Issues"
-        to="/"
-      >
+      <NavLink id="Issues" to="/issues">
         Issues
       </NavLink>
-      <NavLink
-        id="Marketplace"
-        to="/"
-      >
+      <NavLink id="Marketplace" to="/marketplace">
         Marketplace
       </NavLink>
-      <NavLink
-        id="Explore"
-        to="/"
-      >
+      <NavLink id="Explore" to="/explore">
         Explore
       </NavLink>
-      <NavLink
-        id="Explore"
-        to="/"
-      >
-              <div className="svg-container">
+      <div className="svg-container">
         <object
           id="bell-icon"
           data="\images\notification-bell-alarm.svg"
@@ -55,7 +44,6 @@ const NavBar = () => {
           height="20"
         />
       </div>
-      </NavLink>
     </nav>
   );
 };
