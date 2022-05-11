@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function UserCard({}) {
+function UserCard({ result }) {
   return (
     <div id="userCard">
       <img id="userPic" src="\images\sigmaUser.png" />

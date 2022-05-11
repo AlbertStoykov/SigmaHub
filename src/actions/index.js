@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const loading = location => ({ type: 'LOADING', payload: location });
 
-const loadResult = ({ login, public_repos } ) => ({ 
+const loadResult = ({ login, name, location, followers, following, repos_url, public_repos, avatar_url } ) => ({ 
     type: 'LOAD_RESULT',
-    payload: { login, public_repos } 
+    payload: { login, name, location, followers, following, repos_url, public_repos, avatar_url } 
 });
 
 export const getResult = searchTerm => {
