@@ -1,25 +1,46 @@
 nav {
-    width: 100%;
-    background-color: var(--primary);
-    padding: 25px;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 31px;
+  display: flex;
+  justify-content: stretch;
+  padding-left: 150px;
+}
+.home-link {
+  margin-right: 10px;
+}
+#Issues {
+  margin-right: 10px;
+}
+#Marketplace {
+  margin-right: 10px;
+}
+.svg-container {
+  margin-left: 900px;
+}
+#bell-icon,
+#plus-icon {
+  margin-right: 5px;
+}
+#logo {
+  width: 100%;
+  max-height: 100px;
+  max-width: 100px;
+  position: fixed;
+  top: 5px;
+  left: 20px;
 }
 
-a { 
-    color: var(--opacity);
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
+a {
+  color: var(--opacity);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-a:hover { 
-    font-weight: 800;
-    color: white;
+a:hover {
+  color: gray;
 }
 
 .active {
-    color: white;
+  color: var(--text-primary);
 }
-
-.home-link { color: wheat; }
