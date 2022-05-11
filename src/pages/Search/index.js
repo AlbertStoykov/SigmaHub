@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { SearchForm, Result, UserCard } from "../../components";
+import { SearchForm, UserCard } from "../../components";
 import { getResult } from "../../actions";
 import "./style.css";
 

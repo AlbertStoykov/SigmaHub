@@ -7,6 +7,11 @@ const loadResult = ({ login, name, location, followers, following, repos_url, pu
     payload: { login, name, location, followers, following, repos_url, public_repos, avatar_url } 
 });
 
+const loadRepo = (repos) => ({
+    type: 'LOAD_RESULT',
+    payload: repos
+})
+
 const getResult = searchTerm => {
     return async (dispatch) => {
         dispatch(loading(searchTerm));
@@ -30,12 +35,12 @@ const userSearch = async searchTerm => {
     }
 }
 
-const getRepos = searchTerm => {
+const getRepos = username => {
     return async (dispatch) => {
-        dispatch(loading(searchTerm));
+        dispatch(loading(username));
         try {
-            const result = await repoSearch(searchTerm);
-            dispatch(loadResult(result))
+            const result = await repoSearch(username);
+            dispatch(loadRepo(result))
         } catch (err) {
             console.warn(err.message);
             dispatch({ type: 'SET_ERROR', payload: err.message })
@@ -44,9 +49,10 @@ const getRepos = searchTerm => {
 };
 
 // helper function
-const repoSearch = async searchTerm => {
+const repoSearch = async username => {
     try {
         const { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
+        console.log(data)
         return data
     } catch(err) {
         if (data.status === 404) { throw Error('That\'s not a valid repo - Please try again!') }

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import RepoCard from "../../components/index";
+import { RepoCard } from "../../components/index";
 import { useParams } from 'react-router';
 import { getRepos } from "../../actions";
 import "./style.css";
@@ -18,7 +18,7 @@ function RepoPage() {
   }, [])
 
   const renderResult = () =>
-  loading ? <p>Loading . . .</p> : <RepoCard result={result} />;
+  loading ? <p>Loading . . .</p> : <RepoCard />;
 
   return (
     <div id="search">
@@ -32,4 +32,4 @@ function RepoPage() {
   );
 }
 
-export default RepoPard;
+export default RepoPage;

@@ -4,11 +4,11 @@ import { NavBar } from "./components";
 import { Welcome,
   Search,
   NotFound,
-  Result,
   Explore,
   Marketplace,
   PullRequests,
-  Issues
+  Issues,
+  RepoPage
 } from "./pages";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/search" >
                 <Route path="/search" element={<Search />} />
-                <Route path=":username" element={<Result />} />
+                <Route path=":username" element={<RepoPage />} />
           </Route>
         </Routes>
       </main>
