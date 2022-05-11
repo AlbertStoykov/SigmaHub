@@ -1,0 +1,43 @@
+#repoCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  border: 1px solid #444c56;
+  border-radius: 25px;
+}
+#repoPic {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px solid #444c56;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+}
+
+#repoText {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+#name {
+  font-size: 3em;
+}
+#repos {
+  font-size: 2em;
+}
+#repo-button {
+  margin-top: 20px;
+  font-size: 2em;
+  border-radius: 10px;
+}
+#repo-button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+#followers {
+  text-decoration: underline;
+  cursor: default;
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 50% 50%;
+}

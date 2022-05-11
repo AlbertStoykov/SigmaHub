@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import RepoCard from "../../components/index";
+import { useParams } from 'react-router';
+import { getRepos } from "../../actions";
 import "./style.css";
 
-function RepoCard() {
-  return (
-    <div id="repoCard">
-      <img id="repoPic" src="\images\sigmaUser.png" />
-      <div id="text">
-        <h2 id="repoName">Repository Name</h2>
-        <div id="repoText">
-          <p>Issue Count:</p>
-          <p>Stargazers:</p>
-          <p>Forks:</p>
-        </div>
-      </div>
-    </div>
-  );
+function RepoPage() {
+  const { username } = useParams();
+  const result = useSelector((state) => state.result);
+  const loading = useSelector((state) => state.loading);
+  const error = useSelector((state) => state.error);
+
+
+
+  return 
 }
 
-export default RepoCard;
+export default RepoPard;
