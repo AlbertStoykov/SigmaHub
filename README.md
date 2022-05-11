@@ -1,8 +1,7 @@
 # SigmaHub
 A repo tracker that gets an overview of user's work without visiting the site itself.
 
-# Lap 3 Debug Assignment 
-Hello! Welcome to _Onur's_ && _ALbert's_ Lap 3 Coding Challenge! Thanks **Jaxsan Sivanesan & Amarachi Umeloh** for for popping by :)
+#### Hello! Welcome to _Onur's_ && _ALbert's_ Lap 3 Coding Challenge! Thanks **Jaxsan Sivanesan & Amarachi Umeloh** for for popping by :)
 
 ## How to Run the App 	:nerd_face:
 * ```npm install``` - install all the node packages
