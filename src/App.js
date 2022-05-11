@@ -24,6 +24,8 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/issues" element={<Issues />} />
+          <Route path="/card" element={<UserCard />} />
+          <Route path="/repo" element={<RepoCard />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/pull-requests" element={<PullRequests />} />
           <Route path="*" element={<NotFound />} />
@@ -32,5 +34,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

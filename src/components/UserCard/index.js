@@ -4,12 +4,16 @@ import "./style.css";
 function UserCard({ result }) {
   return (
     <div id="userCard">
-      <img src={`${result.avatar_url}`} />
-      <h2>{result.login}&nbsp;&nbsp;&nbsp;{result.name}&nbsp;&nbsp;&nbsp;{result.location}</h2>
-      <p>Number of Repos: {result.public_repos}</p>
-      <button>Show Repos</button>
-      <p>Followers: {result.followers}</p>
-      <p>Following: {result.following}</p>
+      <img id="userPic" src="\images\sigmaUser.png" />
+      <div id="text">
+        <h2 id="name">Name, Region</h2>
+        <p id="repos">Number of Repos: 12</p>
+        <button id="repo-button">Show Repos</button>
+        <div id="followers">
+          <p className="follow">Followers: 10</p>
+          <p className="follow">Followings: 22</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,21 +1,23 @@
-#userCard {
+#repoCard {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: transparent;
   border: 1px solid #444c56;
   border-radius: 25px;
 }
-#userPic {
+#repoPic {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   border: 2px solid #444c56;
-  size: 20%;
+  max-width: 60px;
+  max-height: 60px;
   border-radius: 50%;
 }
 
-#text {
-  display: stretch;
+#repoText {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 #name {
   font-size: 3em;
