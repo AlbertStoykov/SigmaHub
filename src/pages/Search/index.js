@@ -29,19 +29,6 @@ function Search() {
       )}
     </div>
   );
-
-  return (
-    <div id="search">
-      Where do you want to search?
-      <SearchForm getResult={search} />
-      <h1>{location}</h1>
-      {error ? (
-        <p role="alert">Oops there's been an error! {error}</p>
-      ) : (
-        renderResult()
-      )}
-    </div>
-  );
 }
 
 export default Search;
