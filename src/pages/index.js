@@ -6,3 +6,4 @@ export { default as Result } from "./Result";
 export { default as Explore } from "./Explore";
 export { default as Issues } from "./Issues";
 export { default as Marketplace } from "./Marketplace";
+export { default as RepoCard } from "./RepoPage";

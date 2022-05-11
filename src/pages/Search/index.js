@@ -8,7 +8,6 @@ function Search() {
   const result = useSelector((state) => state.result);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
-  const user = useSelector((state) => state.user);
   
   const dispatch = useDispatch();
 //   on load the page gets Eluented
