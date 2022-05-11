@@ -13,6 +13,7 @@ function Search(){
     const dispatch = useDispatch();
     
     const search = searchTerm => dispatch(getResult(searchTerm));
+    console.log(search)
 
     const renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
 
