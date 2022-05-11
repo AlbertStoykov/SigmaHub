@@ -7,6 +7,7 @@ import "./style.css";
 
 function RepoPage() {
   const { username } = useParams();
+
   const result = useSelector((state) => state.result);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
