@@ -6,32 +6,36 @@ import "./style.css";
 const NavBar = () => {
   return (
     <nav>
+      <NavLink className="home-link" to="/">
       <img src="\images\logo.png" id="logo" />
-      <NavLink className="home-link" to="/search">
+      </NavLink>
+      <NavLink className="home-link" to="/">
+
         Pull Requests
       </NavLink>
       <NavLink
         id="Issues"
-        className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/search"
+        to="/"
       >
         Issues
       </NavLink>
       <NavLink
         id="Marketplace"
-        className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/search"
+        to="/"
       >
         Marketplace
       </NavLink>
       <NavLink
         id="Explore"
-        className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/search"
+        to="/"
       >
         Explore
       </NavLink>
-      <div className="svg-container">
+      <NavLink
+        id="Explore"
+        to="/"
+      >
+              <div className="svg-container">
         <object
           id="bell-icon"
           data="\images\notification-bell-alarm.svg"
@@ -51,6 +55,7 @@ const NavBar = () => {
           height="20"
         />
       </div>
+      </NavLink>
     </nav>
   );
 };
