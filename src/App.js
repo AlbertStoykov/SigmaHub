@@ -8,13 +8,13 @@ function App() {
             <NavBar />
             <main>
                 <Routes>
-                    <Route path="/" element={<Welcome />} />
+                <Route path="/">
+                        <Route path="/" element={<Search />} />
+                        <Route path=":username" element={<Result />} />
+                    </Route>
                     <Route path="/about" element={<About />}/>
                     <Route path="*" element={<NotFound />} />
-                    <Route path="/search">
-                        <Route path="/search" element={<Search />} />
-                        <Route path=":name" element={<Result />} />
-                    </Route>
+
                 </Routes>
             </main>
         </div>
