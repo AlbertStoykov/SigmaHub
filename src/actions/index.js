@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const loading = location => ({ type: 'LOADING', payload: location });
 
-const loadResult = ({ results: { sunrise, sunset } }) => ({ 
+const loadResult = ({ login, public_repos } ) => ({ 
     type: 'LOAD_RESULT',
-    payload: { sunrise, sunset } 
+    payload: { login, public_repos } 
 });
 
 export const getResult = searchTerm => {
@@ -20,30 +20,10 @@ export const getResult = searchTerm => {
     };
 };
 
-
-// Helpers
-const fetchLongLat = async searchTerm => {
-    try {
-        const { data } = await axios.get(`https://restcountries.com/v2/capital/${searchTerm}`);
-        return data[0].latlng;
-    } catch(err) {
-        if (data.status === 404) { throw Error('That\'s not a valid capital city!') }
-        throw new Error(err.message)
-    }
-}
-
-const fetchSunriseSunset = async ([ latt, longt ]) => {
-    try {
-        const { data } = await axios.get(`https://api.sunrise-sunset.org/json?lat=${latt}&lng=${longt}&date=today`);
-        return data;
-    } catch(err) {
-        throw new Error(err.message)
-    }
-}
-
 const userSearch = async searchTerm => {
     try {
         const { data } = await axios.get(`https://api.github.com/users/${searchTerm}`);
+        console.log(data)
         return data
     } catch(err) {
         if (data.status === 404) { throw Error('That\'s not a valid user - Please try again!') }

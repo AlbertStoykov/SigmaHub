@@ -19,7 +19,6 @@ input,
 button {
   border: none;
   font-family: var(--font-primary);
-  text-transform: uppercase;
   background-color: var(--opacity);
   color: var(--secondary);
 }

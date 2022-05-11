@@ -11,8 +11,9 @@ function Search() {
   const error = useSelector((state) => state.error);
 
   const dispatch = useDispatch();
-
-  const search = (searchTerm) => dispatch(getResult(searchTerm));
+   
+  const search = searchTerm => dispatch(getResult(searchTerm));
+  console.log(search)
 
   const renderResult = () =>
     loading ? <p>Loading . . .</p> : <Result result={result} />;
