@@ -7,27 +7,27 @@ const NavBar = () => {
   return (
     <nav>
       <img src="\images\logo.png" id="logo" />
-      <NavLink className="home-link" to="/">
+      <NavLink className="home-link" to="/search">
         Pull Requests
       </NavLink>
       <NavLink
         id="Issues"
         className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/"
+        to="/search"
       >
         Issues
       </NavLink>
       <NavLink
         id="Marketplace"
         className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/"
+        to="/search"
       >
         Marketplace
       </NavLink>
       <NavLink
         id="Explore"
         className={(navData) => (navData.isActive ? "active" : "none")}
-        to="/"
+        to="/search"
       >
         Explore
       </NavLink>
