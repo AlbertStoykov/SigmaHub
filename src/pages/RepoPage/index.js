@@ -11,19 +11,20 @@ function RepoPage() {
   const result = useSelector((state) => state.result);
   const loading = useSelector((state) => state.loading);
   const error = useSelector((state) => state.error);
-
+  console.log(username)
   const dispatch = useDispatch();
   
   useEffect(() => {
     dispatch(getRepos(username));
   }, [])
 
+  // made it into an array
   const renderResult = () =>
-  loading ? <p>Loading . . .</p> : <RepoCard />;
+  loading ? <p>Loading . . .</p> : Array.from(result).map((repoObject, i) => <li>hey</li>)
 
   return (
     <div id="search">
-      {result.name}'s Repositories! 
+      {username}'s Repositories! 
       {error ? (
         <p role="alert">Oops there's been an error! {error}</p>
       ) : (

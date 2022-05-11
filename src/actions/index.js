@@ -52,7 +52,6 @@ const getRepos = username => {
 const repoSearch = async username => {
     try {
         const { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
-        console.log(data)
         return data
     } catch(err) {
         if (data.status === 404) { throw Error('That\'s not a valid repo - Please try again!') }
