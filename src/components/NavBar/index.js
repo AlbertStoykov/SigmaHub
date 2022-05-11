@@ -10,6 +10,7 @@ const NavBar = () => {
       <img src="\images\logo.png" id="logo" />
       </NavLink>
       <NavLink className="home-link" to="/">
+
         Pull Requests
       </NavLink>
       <NavLink
