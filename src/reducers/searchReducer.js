@@ -1,9 +1,9 @@
-const initState = { location: "", result: { sunrise: "", sunset: "" }, loading: false };
+const initState = { login: "", result: { name: "", public_repos: "" }, loading: false };
 
 const searchReducer = (state=initState, action) => {
     switch(action.type){
         case 'LOADING':
-            return { ...state, location: action.payload, loading: true };
+            return { ...state, login: action.payload, loading: true };
         case 'LOAD_RESULT':
             return { ...state, result: action.payload, loading: false, error: false };
         case 'SET_ERROR':
