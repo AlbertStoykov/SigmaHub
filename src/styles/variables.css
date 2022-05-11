@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+:root {
+    --primary: cadetblue;
+    --secondary: olive;
+    --text-primary: white;
+    --text-secondary: cadetblue;
+    --opacity: rgba(255,255,255,0.5);
+    --font-accent: 'Waiting for the Sunrise', cursive;
+    --font-primary: 'Raleway', sans-serif;
+}

@@ -1,0 +1,27 @@
+@import './variables.css';
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    padding: 50px;
+}
+
+input, button {
+    border: none;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    background-color: var(--opacity);
+    color: var(--secondary)
+}
+
+[type="text"] {
+    border: 1px solid olive;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+section {
+    display: flex;
+    font-size: 3rem;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 50vh;
+}
