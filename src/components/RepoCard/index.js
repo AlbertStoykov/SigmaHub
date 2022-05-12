@@ -1,16 +1,21 @@
 import React from "react";
 import "./style.css";
 
+
 function RepoCard({ result }) {
+  const repoNameSplit = result.name.split('_').join(' ');
   return (
     <div id="repoCard">
-      <img id="repoPic" src="\images\sigmaUser.png" />
+      <div id="imgContainer">
+        <img id="repoPic" src={`${result.owner.avatar_url}`} />
+      </div>
       <div id="text">
-        <h2 id="repoName">{result}</h2>
+        <h2 id="repoName">{repoNameSplit}</h2>
+        <h5 id="repoDesc">{result.description}</h5>
         <div id="repoText">
-          <p>Issue Count: {}</p>
-          <p>Stargazers: {}</p>
-          <p>Forks: {}</p>
+          {result.has_issues === false ? <p>Not Working on it</p> : <p>Working on it!</p>}
+          <p>Stargazers: {result.stargazers_count}</p>
+          <p>Forks: {result.forks}</p>
         </div>
       </div>
     </div>

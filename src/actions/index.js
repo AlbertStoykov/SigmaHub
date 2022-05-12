@@ -1,6 +1,6 @@
 import axios from 'axios'; 
 
-const loading = location => ({ type: 'LOADING', payload: location });
+const loading = location => ({ type: 'LOADING' });
 
 const loadResult = ({ login, name, location, followers, following, repos_url, public_repos, avatar_url } ) => ({ 
     type: 'LOAD_RESULT',
