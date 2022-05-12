@@ -7,3 +7,7 @@ div {
   font-weight: 400;
   font-size: larger;
 }
+
+.footer {
+  text-decoration: underline;
+}
