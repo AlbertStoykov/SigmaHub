@@ -6,11 +6,11 @@ function RepoCard({ result }) {
     <div id="repoCard">
       <img id="repoPic" src="\images\sigmaUser.png" />
       <div id="text">
-        <h2 id="repoName">Repository Name</h2>
+        <h2 id="repoName">{result}</h2>
         <div id="repoText">
-          <p>Issue Count:</p>
-          <p>Stargazers:</p>
-          <p>Forks:</p>
+          <p>Issue Count: {}</p>
+          <p>Stargazers: {}</p>
+          <p>Forks: {}</p>
         </div>
       </div>
     </div>

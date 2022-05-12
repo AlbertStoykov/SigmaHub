@@ -20,7 +20,7 @@ function RepoPage() {
 
   // made it into an array so it maps
   const renderResult = () =>
-  loading ? <p>Loading . . .</p> : Array.from(result).map((repoObject, i) => <li>hey</li>)
+  loading ? <p>Loading . . .</p> : Array.from(result).map((repoObject, i) => <RepoCard />)
 
   return (
     <div id="search">
