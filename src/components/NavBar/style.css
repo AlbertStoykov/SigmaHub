@@ -1,0 +1,28 @@
+nav {
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  height: 100px;
+  width: 200px;
+  padding-top: 10px;
+  margin-left: -100px;
+}
+
+a {
+  color: var(--opacity);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: gray;
+}
+
+.active {
+  color: var(--text-primary);
+}

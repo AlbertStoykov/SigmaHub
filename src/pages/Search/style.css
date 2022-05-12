@@ -1,0 +1,9 @@
+p,
+div {
+  color: var(--text-primary);
+}
+
+.what {
+  font-weight: 400;
+  font-size: larger;
+}

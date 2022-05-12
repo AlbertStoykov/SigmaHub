@@ -1,0 +1,43 @@
+#userCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: var(--primary);
+  border: 1px solid #444c56;
+  border-radius: 25px;
+  margin-top: 5vh;
+}
+#userPic {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px solid #444c56;
+  size: 20%;
+  border-radius: 50%;
+}
+
+#text {
+  display: stretch;
+}
+#name {
+  font-size: 3em;
+}
+#repos {
+  font-size: 2em;
+}
+.repo-button {
+  margin-top: 20px;
+  font-size: 2em;
+  border-radius: 30px;
+  padding: 12px;
+}
+.repo-button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+#followers {
+  text-decoration: underline;
+  cursor: default;
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 50% 50%;
+}

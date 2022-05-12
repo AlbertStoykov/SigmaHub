@@ -1,0 +1,10 @@
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    margin-right: 1vw;
+    padding: 5px;
+    border-radius: 5px;
+}
