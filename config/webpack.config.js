@@ -29,6 +29,9 @@ const config = {
       template: path.join(PUBLIC_DIRECTORY, 'index.html'),
     }),
   ],
+  output: { 
+    path: path.resolve(ROOT_DIRECTORY, 'build'), // here!
+  },
   module: {
     // helpers we want webpack to use
     rules: [
