@@ -7,7 +7,9 @@ const NavBar = () => {
   return (
     <nav>
       <NavLink className="home-link" to="/">
-        <img src={logo} id="logo" />
+        <div className="img-container">
+            <img src={logo} id="logo" />
+        </div>
       </NavLink>
       <NavLink className="search" to="/search">
         Search

@@ -6,9 +6,14 @@ nav {
   align-items: center;
 }
 
-#logo {
+.img-container {
   height: 100px;
-  width: 200px;
+	width: 200px;
+}
+
+#logo {
+	max-width: 100%;
+	max-height: 100%;
   padding-top: 10px;
   margin-left: -100px;
 }
