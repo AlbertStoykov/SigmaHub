@@ -41,3 +41,9 @@
   margin-top: 30px;
   grid-template-columns: 50% 50%;
 }
+
+.search .user-title {
+  margin-left: 6.1%;
+  font-weight: 480;
+  font-size: larger;
+}

@@ -23,8 +23,8 @@ function RepoPage() {
   loading ? <p>Loading . . .</p> : Array.from(result).map((repoObject, i) => <RepoCard key={i} result={repoObject}/>)
 
   return (
-    <div id="search">
-      {username}'s Repositories! 
+    <div className="search">
+      <p className="user-title">{username}'s Repositories!</p>
       {error ? (
         <p role="alert">Oops there's been an error! {error}</p>
       ) : (

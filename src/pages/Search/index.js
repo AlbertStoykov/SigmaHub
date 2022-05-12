@@ -22,7 +22,7 @@ function Search() {
     
   return (
     <div id="search">
-      Which gitHub User do you want to search?
+      <p className="what">Which gitHub User do you want to search?</p>
       <SearchForm getResult={search} />
       {error ? (
         <p role="alert">Oops there's been an error! {error}</p>

@@ -1,9 +1,11 @@
-#repoCard {
+.repoCard {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: transparent;
+  background-color: var(--primary);
   border: 1px solid #444c56;
   border-radius: 25px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 #imgContainer {
@@ -17,6 +19,14 @@
   max-width: 30px;
   max-height: 30px;
   border-radius: 50%;
+}
+#repoName {
+  font-size: 2em;
+  color:rgb(241, 241, 241);
+}
+
+#repoName:hover {
+  color: gray;
 }
 
 #repoDesc {
