@@ -7,7 +7,10 @@ const NavBar = () => {
   return (
     <nav>
       <NavLink className="home-link" to="/">
-        <img src="sigmahub.netlify.app/images/logo.png" id="logo" />
+        <img
+          src="https://unrivaled-heliotrope-cec12b.netlify.app/images/logo.png"
+          id="logo"
+        />
       </NavLink>
       <NavLink className="search" to="/search">
         Search
