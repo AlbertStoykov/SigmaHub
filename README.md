@@ -1,5 +1,5 @@
 # SigmaHub
-<a href="https://sigmahub.netlify.app/" target="_blank">sigmahub.netlify.app</a>
+<a href="https://sigmahub.netlify.app/" onclick="window.open(this.href,'_blank');return false;">sigmahub.netlify.app</a>
 
 A repo tracker that gets an overview of user's work without visiting the site itself.
 
