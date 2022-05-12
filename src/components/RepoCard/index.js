@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function RepoCard() {
+function RepoCard({ result }) {
   return (
     <div id="repoCard">
       <img id="repoPic" src="\images\sigmaUser.png" />
