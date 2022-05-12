@@ -17,7 +17,7 @@ function UserCard({ result }) {
       <div id="text">
         <h2 id="name">{result.login},&nbsp;&nbsp;{result.name},&nbsp;&nbsp;{result.location}</h2>
         <p id="repos">Number of Repos: {result.public_repos}</p>
-        <button id="repo-button" onClick={repoButton}>Show Repos</button>
+        <button className="repo-button" onClick={repoButton}>Show Repos</button>
         <div id="followers">
           <p className="follow">Followers: {result.followers}</p>
           <p className="follow">Followings: {result.following}</p>

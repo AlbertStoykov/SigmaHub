@@ -23,13 +23,13 @@
 #repos {
   font-size: 2em;
 }
-#repo-button {
+.repo-button {
   margin-top: 20px;
   font-size: 2em;
   border-radius: 30px;
-  padding: 8px;
+  padding: 12px;
 }
-#repo-button:hover {
+.repo-button:hover {
   background-color: lightblue;
   cursor: pointer;
 }
