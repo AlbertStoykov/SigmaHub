@@ -2,16 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import logo from "./logo.png";
-import bell from "./bell.png";
-import plus from "./plus.png";
-import user from "./user.png";
+import bell from "./bell.svg";
+import plus from "./plus.svg";
+import user from "./user.svg";
 // changed activeClassName since it does not exist after react v6 :D
 const NavBar = () => {
   return (
     <nav>
       <NavLink className="home-link" to="/">
         <div className="img-container">
-            <img src={logo} id="logo" />
+          <img src={logo} id="logo" />
         </div>
       </NavLink>
       <NavLink className="search" to="/search">
