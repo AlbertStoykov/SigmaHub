@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
-
+import logo from "./logo.png"
 // changed activeClassName since it does not exist after react v6 :D
 const NavBar = () => {
   return (
     <nav>
       <NavLink className="home-link" to="/">
-        <img src="images/logo.png" id="logo" />
+        <img src={logo} id="logo" />
       </NavLink>
       <NavLink className="search" to="/search">
         Search
