@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
-import logo from "./logo.png"
+import logo from "./logo.png";
+import bell from "./bell.png";
+import plus from "./plus.png";
+import user from "./user.png";
 // changed activeClassName since it does not exist after react v6 :D
 const NavBar = () => {
   return (
@@ -25,24 +28,9 @@ const NavBar = () => {
         Explore
       </NavLink>
       <div className="svg-container">
-        <object
-          id="bell-icon"
-          data="\images\notification-bell-alarm.svg"
-          width="30"
-          height="20"
-        />
-        <object
-          id="plus-icon"
-          data="\images\add-plus.svg"
-          width="30"
-          height="20"
-        />
-        <object
-          id="user-icon"
-          data="\images\user-avatar-filled-alt.svg"
-          width="30"
-          height="20"
-        />
+        <object id="bell-icon" data={bell} width="30" height="20" />
+        <object id="plus-icon" data={plus} width="30" height="20" />
+        <object id="user-icon" data={user} width="30" height="20" />
       </div>
     </nav>
   );
