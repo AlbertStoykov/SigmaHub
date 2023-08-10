@@ -3,7 +3,7 @@
 
 A repo tracker that gets an overview of user's work without visiting the site itself.
 
-#### Hello! Welcome to _Onur's_ && _ALbert's_ Lap 3 Coding Challenge! Thanks **Jaxsan Sivanesan & Amarachi Umeloh** for for popping by :)
+#### Hello! Welcome to _Onur's_ && _ALbert's_ Lap 3 Coding Challenge!
 
 ## How to Run the App :nerd_face:
 
